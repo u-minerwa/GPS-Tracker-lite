@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements LocListenerInterf
     }
 
     private void init(){
-        tvVelocity.findViewById(R.id.tvVelocity);
-        tvDistance.findViewById(R.id.tvDistance);
+        tvVelocity = findViewById(R.id.tvVelocity);
+        tvDistance = findViewById(R.id.tvDistance);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         myLocListener = new MyLocListener();
         myLocListener.setLocListenerInterface(this);
